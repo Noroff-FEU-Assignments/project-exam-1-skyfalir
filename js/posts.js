@@ -12,12 +12,13 @@ async function getBlog() {
 	try {
 		const res = await fetch(apiUrl + "/" + blogID + "?_embed");
 		const json = await res.json();
+		const altText = json._embedded["wp:featuredmedia"][0].alt_text;
 		let image = "";
 
 		if (json.featured_media && json._embedded && json._embedded["wp:featuredmedia"]) {
 			image =
 				json._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
-			const altText = json._embedded["wp:featuredmedia"][0].alt_text;
+
 
 			if (image) {
 				result = post.innerHTML = `<div class="post">
