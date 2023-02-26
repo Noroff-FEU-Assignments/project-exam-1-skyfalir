@@ -1,0 +1,41 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    border-color: var(--red-wine);
+}
+footer{
+    position: absolute;
+}
+.about-us{
+    margin-top: 10dvh;
+    max-width: 50%;
+    text-align: center;
+}
+.about-us h1{
+    margin-bottom: 20px;
+    color: var(--white-crown);
+    text-transform: uppercase;
+    text-shadow: 0px 10px 5px #000000ab;
+}
+.about-us p{
+    margin-block: 40px;
+    color: var(--white-crown);
+    text-shadow: 1px 2px 2px #000;
+    font-weight: 600;
+    font-size: 1.2rem
+}
+.sub-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--red-wine);
+}
+@media screen and (max-width: 660px){
+    .about-us{
+        max-width: 90%;
+    }
+    
+}

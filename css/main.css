@@ -1,0 +1,127 @@
+@import url(/css/_colors.css);
+* {
+	font-family: "montserrat";
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: linear-gradient(175deg, var(--black-wine) 0%, var(--red-wine) 110%);
+	background-size: 600% 1000%;
+}
+nav {
+	border-bottom: 1px solid var(--white-crown);
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+nav > ul {
+	display: flex;
+	list-style: none;
+	margin: 0px;
+}
+nav a {
+	display: inline-block;
+	color: var(--white-crown);
+	margin-inline: 1px;
+	font-size: 1.1rem;
+	font-weight: 800;
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 17px;
+	box-shadow: inset 0 0 0 0 var(--white-crown);
+	transition: color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+	border-radius: 1px;
+	border-top: 1px solid var(--white-crown);
+}
+nav a:hover {
+	box-shadow: inset 0 -100px 0 0 var(--white-crown);
+	color: var(--black-wine);
+}
+footer {
+	position: static;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background: #0f0505;
+}
+footer p {
+	width: 100%;
+	color: var(--white-crown);
+	text-align: center;
+	opacity: 0.5;
+}
+.loader-grid {
+	display: contents;
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.loader-grid div {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: var(--white-crown);
+	animation: loader-grid 1.2s linear infinite;
+}
+.loader-grid div:nth-child(1) {
+	top: 8px;
+	left: 8px;
+	animation-delay: 0s;
+}
+.loader-grid div:nth-child(2) {
+	top: 8px;
+	left: 32px;
+	animation-delay: -0.4s;
+}
+.loader-grid div:nth-child(3) {
+	top: 8px;
+	left: 56px;
+	animation-delay: -0.8s;
+}
+.loader-grid div:nth-child(4) {
+	top: 32px;
+	left: 8px;
+	animation-delay: -0.4s;
+}
+.loader-grid div:nth-child(5) {
+	top: 32px;
+	left: 32px;
+	animation-delay: -0.8s;
+}
+.loader-grid div:nth-child(6) {
+	top: 32px;
+	left: 56px;
+	animation-delay: -1.2s;
+}
+.loader-grid div:nth-child(7) {
+	top: 56px;
+	left: 8px;
+	animation-delay: -0.8s;
+}
+.loader-grid div:nth-child(8) {
+	top: 56px;
+	left: 32px;
+	animation-delay: -1.2s;
+}
+.loader-grid div:nth-child(9) {
+	top: 56px;
+	left: 56px;
+	animation-delay: -1.6s;
+}
+@keyframes loader-grid {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}
