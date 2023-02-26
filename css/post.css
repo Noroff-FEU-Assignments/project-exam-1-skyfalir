@@ -72,7 +72,7 @@ nav {
 	position: absolute;
 	opacity: 0.2;
 	z-index: -1;
-	top: 60px;
+	top: 2%;
 	right: -100px;
 }
 .modal img {
@@ -185,6 +185,9 @@ nav {
 	.post p{
 		max-width: 40vw;
 	}
+	.bg-art{
+		top: 12%;
+	}
 }
 @media screen and (max-width: 600px) {
 	.modal img {
@@ -201,6 +204,9 @@ nav {
 	}
 	.post p {
 		margin-top: 10px;
-		max-width: 80dvw;
+		max-width: 85dvw;
+	}
+	.bg-art{
+		top: 1%;
 	}
 }
