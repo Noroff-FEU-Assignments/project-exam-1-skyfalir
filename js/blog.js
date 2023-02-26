@@ -15,9 +15,9 @@ async function loadPosts() {
 		);
 		const posts = await response.json();
 		let result = "";
-		
+
 		for (i = 0; i < posts.length; i++) {
-			console.log(posts[i].id)
+			console.log(posts[i].id);
 			result += `
         <div class="blog-post">
           <h2>${posts[i].title.rendered}</h2>

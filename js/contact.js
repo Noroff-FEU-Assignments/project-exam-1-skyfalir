@@ -8,8 +8,6 @@ const formSubjectError = document.querySelector("#subjectError");
 const formMessage = document.querySelector("#message");
 const formMessageError = document.querySelector("#messageError");
 
-
-
 function validateForm() {
 	event.preventDefault();
 
@@ -36,7 +34,6 @@ function validateForm() {
 	} else {
 		formMessageError.style.display = "block";
 	}
-
 }
 
 form.addEventListener("submit", validateForm);

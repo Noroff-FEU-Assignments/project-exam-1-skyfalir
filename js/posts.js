@@ -48,9 +48,9 @@ async function getBlog() {
 function setupModal() {
 	try {
 		const modal = document.querySelector(".modal");
-		const closeBtn = document.querySelector(".close")
+		const closeBtn = document.querySelector(".close");
 		const postImg = document.querySelector(".image");
-		const modalimg = document.querySelector(".modal-img")
+		const modalimg = document.querySelector(".modal-img");
 
 		postImg.addEventListener("click", () => {
 			modal.style.display = "block";
@@ -58,7 +58,7 @@ function setupModal() {
 			modalimg.alt = postImg.alt;
 		});
 
-		closeBtn.onclick = function() {
+		closeBtn.onclick = function () {
 			modal.style.display = "none";
 		};
 
@@ -73,5 +73,3 @@ function setupModal() {
 }
 
 getBlog();
-
-
