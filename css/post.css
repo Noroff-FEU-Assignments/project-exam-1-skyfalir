@@ -182,6 +182,9 @@ nav {
 	.post img {
 		max-height: 30dvw;
 	}
+	.post p{
+		max-width: 40vw;
+	}
 }
 @media screen and (max-width: 600px) {
 	.modal img {
