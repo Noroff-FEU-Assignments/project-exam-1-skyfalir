@@ -7,6 +7,10 @@ main{
 	position: relative;
 	overflow: hidden;
 }
+nav {
+	background: var(--black-wine);
+}
+
 .post {
 	text-align: center;
 	color: var(--white-crown);
@@ -15,9 +19,6 @@ main{
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-}
-nav {
-	background: var(--black-wine);
 }
 .post h1 {
 	margin-top: 5px;
@@ -74,23 +75,6 @@ nav {
 	top: 60px;
 	right: -100px;
 }
-.close {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	z-index: 1;
-	color: #fff;
-	font-size: 5rem;
-	font-weight: bold;
-	transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
-}
 .modal img {
 	display: block;
 	min-width: 70%;
@@ -111,6 +95,26 @@ nav {
 	width: 80px;
 	height: 80px;
 }
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	z-index: 1;
+	color: #fff;
+	font-size: 5rem;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* loader */
+
 .loader-grid div {
 	position: absolute;
 	width: 16px;

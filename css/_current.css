@@ -1,0 +1,6 @@
+@import url(_colors.css);
+
+nav .current{
+    color: var(--red-wine);
+
+}
