@@ -2,7 +2,7 @@
 
 ![image](https://i.imgur.com/sTkavfM.jpg)
 
-A simple overview of the use/purpose of the project.
+A simple blog about jazz.
 
 ## Description
 
