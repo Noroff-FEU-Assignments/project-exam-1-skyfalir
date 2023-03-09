@@ -1,4 +1,4 @@
-# Your project title
+# The Jazz blog
 
 ![image](https://i.imgur.com/sTkavfM.jpg)
 
