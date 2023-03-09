@@ -1,67 +1,62 @@
-## Project Exam 1
+# Your project title
 
-## Goal
+![image](https://i.imgur.com/sTkavfM.jpg)
 
-To put into practice the skills learned over your first year of studies.
+A simple overview of the use/purpose of the project.
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+## Description
 
 ### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+The home page contains the following:
+
+A simple responsive header that animates between two colours, seperated by words.
+A static subheading.
+
+An elegant nav bar with hover and click effects.
+
+A simple carousel that gets data from the WP REST API, displaying the latests posts which you can cycle through using the navigation arrows.
 
 ### Blog Page
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+The blog page is a fully responsive hub for all blog posts, it displays 10 posts by default, but can load more by pressing the "load more" button at the bottom of the page. 
+Each post has a short summary under its title and uses the heading image as background for the blog post container.
+You can view the full post by clicking the button "Read More"
 
 ### Blog Specific Page
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+Every blog post page displays the posts in two sections:
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+The first section is the title and heading image, the section has a responsive thematic artwork in the background that scales with the content displayed.
+The second section is the article and/or post itself, displayed as paragraphs with a max width for easier reading.
+It maintains a high contrast of black/white in the text section to also allow for easier reading.
 
-### Contact page
+### About Page
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+The about page is a simple summary of what the blog is all about; Jazz.
+It features a title, a subtle gradient background and a few paragraphs about jazz and the commitment the blog has towards delivering jazz related content.
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+### Contact Page
 
-### WordPress
+The contact page features a simple, responsive contact form with validation.
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
+## Built With
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+This project is built entirely with Vanilla Javascript, HTML and CSS.
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
+## Getting Started
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+### Installing
 
-## Level 1 Process
+To install this project locally simply:
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+1. Clone the repo:
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
+```bash
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-skyfalir.git
+```
 
+## Contact
+
+[My Twitter page](www.twitter.com)
+
+[My LinkedIn page](www.linkedin.com)
